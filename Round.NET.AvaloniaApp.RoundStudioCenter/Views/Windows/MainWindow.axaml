@@ -5,6 +5,7 @@
         xmlns:views="clr-namespace:Round.NET.AvaloniaApp.RoundStudioCenter.Views"
         xmlns:ui="using:FluentAvalonia.UI.Controls"
         xmlns:uip="using:FluentAvalonia.UI.Controls.Primitives"
+        xmlns:fluentIcons="clr-namespace:FluentAvalonia.FluentIcons;assembly=FluentAvalonia.FluentIcons"
         xmlns:pages="clr-namespace:Round.NET.AvaloniaApp.RoundStudioCenter.Views.Pages"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Round.NET.AvaloniaApp.RoundStudioCenter.Views.Windows.MainWindow"
@@ -65,11 +66,11 @@
                     
                 </Grid>
                 <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="8">
-                    <Button Width="32" Height="32" Margin="0,0,5,0" Click="MinimizeButton_Click" BorderBrush="#a6292929" BorderThickness="0" Background="Transparent">
+                    <Button Width="32" Height="32" Margin="0,0,5,0" Click="MinimizeButton_Click" BorderBrush="#a6292929" BorderThickness="0" Background="#a6292929">
                         <Path Width="12" Height="12" Stretch="Uniform" Fill="White" Margin="0,20,0,0"
                               Data="M853.333333 554.666667H170.666667c-23.466667 0-42.666667-19.2-42.666667-42.666667s19.2-42.666667 42.666667-42.666667h682.666666c23.466667 0 42.666667 19.2 42.666667 42.666667s-19.2 42.666667-42.666667 42.666667z" />
                     </Button>
-                    <Button Name="Maxbtn" Width="32" Height="32" Margin="0,0,5,0" Click="MaximizeButton_Click" BorderBrush="#a6292929" BorderThickness="0" Background="Transparent">
+                    <Button Name="Maxbtn" Width="32" Height="32" Margin="0,0,5,0" Click="MaximizeButton_Click" BorderBrush="#a6292929" BorderThickness="0" Background="#a6292929">
                         <Path Width="12" Height="12" Stretch="Uniform" Fill="White" Margin="0,3,0,0"
                               Data="M233.301333 128A105.301333 105.301333 0 0 0 128 233.301333v557.397334A105.301333 105.301333 0 0 0 233.301333 896h557.397334A105.301333 105.301333 0 0 0 896 790.698667V233.301333A105.301333 105.301333 0 0 0 790.698667 128H233.301333z m-18.602666 105.301333c0-10.24 8.32-18.602667 18.602666-18.602666h557.397334c10.24 0 18.602667 8.32 18.602666 18.602666v557.397334c0 10.24-8.32 18.602667-18.602666 18.602666H233.301333a18.56 18.56 0 0 1-18.602666-18.602666V233.301333z"/>
                     </Button>
@@ -84,14 +85,56 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <ui:NavigationView Grid.Row="1">
+        <ui:NavigationView Grid.Row="1" IsSettingsVisible="False" Name="MainNavView" SelectionChanged="NavigationView_OnSelectionChanged">
             <ui:NavigationView.MenuItems>
-                <ui:NavigationViewItem Content="主页"/>
-                <ui:NavigationViewItem Content="应用"/>
-                <ui:NavigationViewItem Content="插件"/>
-                <ui:NavigationViewItem Content="关于我们"/>
-                <ui:NavigationViewItem Content="应用文档"/>
+                <ui:NavigationViewItem Content="主页" Tag="Home" IsSelected="True">
+                    <ui:NavigationViewItem.IconSource>
+                        <fluentIcons:FluentIconSource Icon="Home20Regular"/>
+                    </ui:NavigationViewItem.IconSource>
+                </ui:NavigationViewItem>
+                <ui:NavigationViewItem Content="应用" Tag="Apps">
+                    <ui:NavigationViewItem.IconSource>
+                        <fluentIcons:FluentIconSource Icon="Apps20Regular"/>
+                    </ui:NavigationViewItem.IconSource>
+                </ui:NavigationViewItem>
+                <ui:NavigationViewItem Content="插件" Tag="Plugins">
+                    <ui:NavigationViewItem.IconSource>
+                        <fluentIcons:FluentIconSource Icon="PuzzlePiece20Regular"/>
+                    </ui:NavigationViewItem.IconSource>
+                </ui:NavigationViewItem>
+                <ui:NavigationViewItem Content="库" Tag="Library">
+                    <ui:NavigationViewItem.IconSource>
+                        <fluentIcons:FluentIconSource Icon="Library20Regular"/>
+                    </ui:NavigationViewItem.IconSource>
+                </ui:NavigationViewItem>
+                <ui:NavigationViewItem Content="关于我们" Tag="AboutUs">
+                    <ui:NavigationViewItem.IconSource>
+                        <fluentIcons:FluentIconSource Icon="People20Regular"/>
+                    </ui:NavigationViewItem.IconSource>
+                </ui:NavigationViewItem>
+                <ui:NavigationViewItem Content="应用文档" Tag="Docs">
+                    <ui:NavigationViewItem.IconSource>
+                        <fluentIcons:FluentIconSource Icon="BookQuestionMark20Regular"/>
+                    </ui:NavigationViewItem.IconSource>
+                </ui:NavigationViewItem>
             </ui:NavigationView.MenuItems>
+            <ui:NavigationView.FooterMenuItems>
+                <ui:NavigationViewItem Content="设置" Tag="Setting">
+                    <ui:NavigationViewItem.IconSource>
+                        <fluentIcons:FluentIconSource Icon="Settings20Regular"/>
+                    </ui:NavigationViewItem.IconSource>
+                </ui:NavigationViewItem>
+                <ui:NavigationViewItem Content="账户" Tag="Accounts">
+                    <ui:NavigationViewItem.IconSource>
+                        <fluentIcons:FluentIconSource Icon="Person20Regular"/>
+                    </ui:NavigationViewItem.IconSource>
+                </ui:NavigationViewItem>
+                <ui:NavigationViewItem Content="关于应用" Tag="About">
+                    <ui:NavigationViewItem.IconSource>
+                        <fluentIcons:FluentIconSource Icon="Info20Regular"/>
+                    </ui:NavigationViewItem.IconSource>
+                </ui:NavigationViewItem>
+            </ui:NavigationView.FooterMenuItems>
             <pages:MainView Margin="0" Name="MainView" Grid.Row="1"/>
         </ui:NavigationView>
     </Grid>

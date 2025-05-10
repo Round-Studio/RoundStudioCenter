@@ -3,6 +3,7 @@ using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Interactivity;
 using Avalonia.Media;
+using FluentAvalonia.UI.Controls;
 
 namespace Round.NET.AvaloniaApp.RoundStudioCenter.Views.Windows;
 
@@ -76,6 +77,11 @@ public partial class MainWindow : Window
     }
 
     private void Button_OnClick(object? sender, RoutedEventArgs e)
+    {
+        
+    }
+
+    private void NavigationView_OnSelectionChanged(object? sender, NavigationViewSelectionChangedEventArgs e)
     {
         
     }
