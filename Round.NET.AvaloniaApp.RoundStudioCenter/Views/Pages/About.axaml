@@ -1,0 +1,19 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Round.NET.AvaloniaApp.RoundStudioCenter.Views.Pages.About">
+    <ScrollViewer Padding="20">
+        <StackPanel>
+            <TextBlock FontSize="20">关于</TextBlock>
+            <DockPanel>
+                <Image Source="/Assets/RoundStudio.png" Width="70" Height="70"/>
+                <TextBlock Margin="50" FontSize="20">Round Studio 中心</TextBlock>
+            </DockPanel>
+            <Label>程序名称：Round Studio Center</Label>
+            <Label>程序包名：Round.NET.AvaloniaApp.RoundStudioCenter</Label>
+            <Label>归属组织：Round Studio</Label>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
