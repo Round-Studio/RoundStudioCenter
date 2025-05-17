@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:ui="using:FluentAvalonia.UI.Controls"
              xmlns:uip="using:FluentAvalonia.UI.Controls.Primitives"
+             xmlns:controls="clr-namespace:Round.NET.AvaloniaApp.RoundStudioCenter.Views.Controls"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="Round.NET.AvaloniaApp.RoundStudioCenter.Views.Pages.MainView">
     <ScrollViewer Padding="20">
@@ -13,10 +14,11 @@
                 <TextBlock Margin="50" FontSize="40">Round Studio 中心</TextBlock>
             </DockPanel>
             <TextBlock>推荐</TextBlock>
-            <DockPanel>
+            <controls:FlipView Height="200"/>
+            <!--<DockPanel>
                 <Button Width="300" Height="80" Margin="10">RMCL 3.0</Button>
                 <Button Width="300" Height="80" Margin="10">Round 可编码计算器</Button>
-            </DockPanel>
+            </DockPanel>-->
             <TextBlock>分类</TextBlock>
             <DockPanel>
                 <Button Content="RMCL插件" Width="200" Height="80" Margin="10"></Button>
