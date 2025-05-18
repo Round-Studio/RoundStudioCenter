@@ -13,13 +13,12 @@
                 <Image Source="/Assets/RoundStudio.png" Width="100" Height="100"/>
                 <TextBlock Margin="50" FontSize="40">Round Studio 中心</TextBlock>
             </DockPanel>
-            <TextBlock>推荐</TextBlock>
-            <controls:FlipView Height="200"/>
+            <Grid x:Name="MainScreen"/>
             <!--<DockPanel>
                 <Button Width="300" Height="80" Margin="10">RMCL 3.0</Button>
                 <Button Width="300" Height="80" Margin="10">Round 可编码计算器</Button>
             </DockPanel>-->
-            <TextBlock>分类</TextBlock>
+            <TextBlock FontWeight="Bold" FontSize="24" Margin="0,0,0,4">分类</TextBlock>
             <DockPanel>
                 <Button Content="RMCL插件" Width="200" Height="80" Margin="10"></Button>
                 <Button Content="Win-Design插件" Width="200" Height="80" Margin="10"></Button>

@@ -13,8 +13,5 @@
         <Button VerticalAlignment="Center" HorizontalAlignment="Right" Height="48" Name="Forward" Width="48" Margin="4" Click="Forward_OnClick" Background="Transparent" BorderThickness="0">
             <fluentIcons:FluentIcon Icon="ArrowRight20Regular" />
         </Button>
-        <Image x:Name="ImageBox"></Image>
-        <TextBlock x:Name="Title" FontSize="30" VerticalAlignment="Bottom" Margin="50,80,80,80"></TextBlock>
-        <TextBlock x:Name="Content" FontSize="20" VerticalAlignment="Bottom" Margin="50,40,80,40"></TextBlock>
     </Grid>
 </UserControl>
