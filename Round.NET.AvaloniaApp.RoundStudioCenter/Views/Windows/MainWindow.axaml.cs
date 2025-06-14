@@ -4,6 +4,8 @@ using Avalonia.Input;
 using Avalonia.Interactivity;
 using Avalonia.Media;
 using FluentAvalonia.UI.Controls;
+using Round.NET.AvaloniaApp.RoundStudioCenter.Views.Controls;
+using Round.NET.AvaloniaApp.RoundStudioCenter.Views.Pages;
 
 namespace Round.NET.AvaloniaApp.RoundStudioCenter.Views.Windows;
 
@@ -83,6 +85,36 @@ public partial class MainWindow : Window
 
     private void NavigationView_OnSelectionChanged(object? sender, NavigationViewSelectionChangedEventArgs e)
     {
-        
+        var tag = ((NavigationViewItem)((NavigationView)sender!).SelectedItem!).Tag.ToString();
+        switch (tag)
+        {
+            case "Home":
+                MainFrame.NavigateTo(new MainView());
+                break;
+            case "Apps":
+                MainFrame.NavigateTo(new Apps());
+                break;
+            case "Plugins":
+                MainFrame.NavigateTo(new Plugins());
+                break;
+            case "Library":
+                MainFrame.NavigateTo(new Library());
+                break;
+            case "AboutUs":
+                MainFrame.NavigateTo(new AboutUs());
+                break;
+            case "Docs":
+                MainFrame.NavigateTo(new Docs());
+                break;
+            case "Settings":
+                MainFrame.NavigateTo(new Settings());
+                break;
+            case "Accounts":
+                MainFrame.NavigateTo(new Accounts());
+                break;
+            case "About":
+                MainFrame.NavigateTo(new About());
+                break;
+        }
     }
 }

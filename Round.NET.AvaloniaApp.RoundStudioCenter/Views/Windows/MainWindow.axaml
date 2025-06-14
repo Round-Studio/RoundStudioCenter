@@ -7,6 +7,7 @@
         xmlns:uip="using:FluentAvalonia.UI.Controls.Primitives"
         xmlns:fluentIcons="clr-namespace:FluentAvalonia.FluentIcons;assembly=FluentAvalonia.FluentIcons"
         xmlns:pages="clr-namespace:Round.NET.AvaloniaApp.RoundStudioCenter.Views.Pages"
+        xmlns:controls="clr-namespace:Round.NET.AvaloniaApp.RoundStudioCenter.Views.Controls"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Round.NET.AvaloniaApp.RoundStudioCenter.Views.Windows.MainWindow"
         WindowStartupLocation="CenterScreen"
@@ -119,7 +120,7 @@
                 </ui:NavigationViewItem>
             </ui:NavigationView.MenuItems>
             <ui:NavigationView.FooterMenuItems>
-                <ui:NavigationViewItem Content="设置" Tag="Setting">
+                <ui:NavigationViewItem Content="设置" Tag="Settings">
                     <ui:NavigationViewItem.IconSource>
                         <fluentIcons:FluentIconSource Icon="Settings20Regular"/>
                     </ui:NavigationViewItem.IconSource>
@@ -135,7 +136,10 @@
                     </ui:NavigationViewItem.IconSource>
                 </ui:NavigationViewItem>
             </ui:NavigationView.FooterMenuItems>
-            <pages:MainView Margin="0" Name="MainView" Grid.Row="1"/>
+            <!--<pages:MainView Margin="0" Name="MainView" Grid.Row="1"/>-->
+            <ScrollViewer>
+                <controls:Frame Name="MainFrame"/>
+            </ScrollViewer>
         </ui:NavigationView>
     </Grid>
 </Window>
