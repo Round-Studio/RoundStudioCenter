@@ -21,7 +21,7 @@
             </Grid.RowDefinitions>
             <!-- 可拖拽的标题栏区域 -->
             <Grid HorizontalAlignment="Stretch"  
-                  Background="#fffafa">  <!-- 透明背景，但可点击 -->
+                  Background="Transparent">  <!-- 透明背景，但可点击 -->
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"></ColumnDefinition>
                     <ColumnDefinition Width="*"></ColumnDefinition>                    
