@@ -4,6 +4,7 @@ using Avalonia.Input;
 using Avalonia.Interactivity;
 using Avalonia.Media;
 using FluentAvalonia.UI.Controls;
+using System.Diagnostics;
 using Round.NET.AvaloniaApp.RoundStudioCenter.Views.Controls;
 using Round.NET.AvaloniaApp.RoundStudioCenter.Views.Pages;
 
@@ -104,7 +105,10 @@ public partial class MainWindow : Window
                 MainFrame.NavigateTo(new AboutUs());
                 break;
             case "Docs":
-                MainFrame.NavigateTo(new Docs());
+                //MainFrame.NavigateTo(new Docs());
+                // 打开默认浏览器并导航到指定URL
+                Process.Start(new ProcessStartInfo("https://gh.roundstudio.top") { UseShellExecute = true });
+                
                 break;
             case "Settings":
                 MainFrame.NavigateTo(new Settings());
