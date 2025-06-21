@@ -11,6 +11,7 @@
                 <Image Source="/Assets/RoundStudio.png" Width="70" Height="70"/>
                 <TextBlock Margin="50" FontSize="20">Round Studio 中心</TextBlock>
             </DockPanel>
+            <TextBlock Margin="4,0,0,10">程序版本：<Run Name="VersionBox">Version</Run></TextBlock>
             <Label>程序名称：Round Studio Center</Label>
             <Label>程序包名：Round.NET.AvaloniaApp.RoundStudioCenter</Label>
             <Label>归属组织：Round Studio</Label>
