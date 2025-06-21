@@ -7,7 +7,7 @@
              xmlns:controls="clr-namespace:Round.NET.AvaloniaApp.RoundStudioCenter.Views.Controls"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="Round.NET.AvaloniaApp.RoundStudioCenter.Views.Pages.MainView">
-    <ScrollViewer Padding="20">
+    <ScrollViewer Margin="20">
         <StackPanel>
             <DockPanel>
                 <Image Source="/Assets/RoundStudio.png" Width="100" Height="100"/>
