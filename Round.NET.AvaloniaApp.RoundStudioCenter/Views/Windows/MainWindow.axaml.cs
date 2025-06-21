@@ -108,7 +108,6 @@ public partial class MainWindow : Window
                 //MainFrame.NavigateTo(new Docs());
                 // 打开默认浏览器并导航到指定URL
                 Process.Start(new ProcessStartInfo("https://gh.roundstudio.top") { UseShellExecute = true });
-                
                 break;
             case "Settings":
                 MainFrame.NavigateTo(new Settings());
