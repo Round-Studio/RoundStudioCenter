@@ -22,6 +22,7 @@
         <PackageReference Include="CommunityToolkit.Mvvm"/>
         <PackageReference Include="FluentAvalonia.FluentIcons" />
         <PackageReference Include="FluentAvaloniaUI" />
+        <PackageReference Include="ReactiveUI" />
         <PackageReference Include="WebView.Avalonia" />
     </ItemGroup>
 

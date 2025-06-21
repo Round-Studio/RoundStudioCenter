@@ -17,6 +17,7 @@
     <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.0" />
     <PackageVersion Include="FluentAvalonia.FluentIcons" Version="1.1.201.1-preview7" />
     <PackageVersion Include="FluentAvaloniaUI" Version="2.4.0-preview1" />
+    <PackageVersion Include="ReactiveUI" Version="20.3.1" />
     <PackageVersion Include="WebView.Avalonia" Version="11.0.0.1" />
     <PackageVersion Include="Xamarin.AndroidX.Core.SplashScreen" Version="1.0.1.15" />
   </ItemGroup>

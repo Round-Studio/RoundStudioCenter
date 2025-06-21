@@ -1,0 +1,18 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Round.NET.AvaloniaApp.RoundStudioCenter.Views.Controls.Card">
+    <Border Background="White" 
+            BorderBrush="#DDDDDD" 
+            BorderThickness="1" 
+            CornerRadius="4" 
+            Padding="16" 
+            Margin="8">
+        <StackPanel>
+            <TextBlock Name="Title" Text="Title" FontSize="18" FontWeight="Bold" Margin="0,0,0,8"/>
+            <TextBlock Name="Description" Text="This is a simple card in Avalonia."/>
+        </StackPanel>
+    </Border>
+</UserControl>
