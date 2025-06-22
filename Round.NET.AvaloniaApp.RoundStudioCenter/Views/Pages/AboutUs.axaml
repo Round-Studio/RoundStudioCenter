@@ -2,7 +2,126 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:FluentAvalonia.UI.Controls;assembly=FluentAvalonia"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="Round.NET.AvaloniaApp.RoundStudioCenter.Views.Pages.AboutUs">
-    Welcome to Avalonia!
+    <ScrollViewer>
+        <StackPanel Margin="20">
+            <TextBlock Margin="10" FontSize="20">关于 Round Studio</TextBlock>
+            <DockPanel Margin="5">
+                <HyperlinkButton DockPanel.Dock="Left" NavigateUri="https://github.com/Round-Studio">GitHub</HyperlinkButton>
+                <HyperlinkButton DockPanel.Dock="Left" NavigateUri="https://round-studio.github.io/">官网</HyperlinkButton>
+                <HyperlinkButton DockPanel.Dock="Left" NavigateUri="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;k=w5s2W_wC-_smmW5LxilzMLHFkfTGSWe4&amp;authKey=FlE3UPHcmFqvT1xl%2FWvRUEtMHhyQ3NyglNprL35e%2BRznI9E%2FNOQCS%2B4oxzF%2BpckB&amp;noverify=0&amp;group_code=1022907106">联系我们</HyperlinkButton>
+            </DockPanel>
+            <TextBlock Margin="10" FontSize="20">团队成员</TextBlock>
+            <StackPanel Margin="5">
+                <DockPanel HorizontalAlignment="Stretch">
+                    <StackPanel Margin="10">
+                        <HyperlinkButton NavigateUri="https://github.com/MinecraftYJQ">
+                            <DockPanel Margin="5">
+                                <Image Source="../../Assets/PeopleAssets/MinecraftYJQ_.png" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+                                <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">Minecraft一角钱</Label>
+                            </DockPanel>
+                        </HyperlinkButton>
+                        <HyperlinkButton NavigateUri="https://github.com/MikuniDOMI">
+                            <DockPanel Margin="5">
+                                <Image Source="../../Assets/PeopleAssets/DrMing.jpg" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+                                <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">DrMing</Label>
+                            </DockPanel>
+                        </HyperlinkButton>
+                        <HyperlinkButton NavigateUri="https://github.com/0x44614D696E67">
+                            <DockPanel Margin="5">
+                                <Image Source="../../Assets/PeopleAssets/DOMI.jpg" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+                                <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">YoumiHa</Label>
+                            </DockPanel>
+                        </HyperlinkButton>
+                    </StackPanel>
+                    <StackPanel Margin="45,10">
+                        <HyperlinkButton NavigateUri="https://github.com/Haveaovinopensourcespirit">
+                            <DockPanel Margin="5">
+                                <Image Source="../../Assets/PeopleAssets/Haveaovinopensourcespirit.jpg" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+                                <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">卡里</Label>
+                            </DockPanel>
+                        </HyperlinkButton>
+                        <HyperlinkButton NavigateUri="https://github.com/AWDNDWindowsXP">
+                            <DockPanel Margin="5">
+                                <Image Source="../../Assets/PeopleAssets/AWDNDWindowsXP.jpg" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+                                <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">爱玩电脑的WindowsXP</Label>
+                            </DockPanel>
+                        </HyperlinkButton>
+                        <HyperlinkButton NavigateUri="https://github.com/SteveHappy1293">
+                            <DockPanel Margin="5">
+                                <Image Source="../../Assets/PeopleAssets/SteveHappy.jpg" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+                                <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">Steve Happy</Label>
+                            </DockPanel>
+                        </HyperlinkButton>
+                    </StackPanel>
+                </DockPanel>
+            </StackPanel>
+            <TextBlock Margin="10" FontSize="20">产品</TextBlock>
+            <ScrollViewer Margin="5">
+                <StackPanel>
+                    <HyperlinkButton NavigateUri="https://github.com/Round-Studio/Round.NET.AvaloniaApp.MinecraftLauncher">
+                        <DockPanel Margin="5">
+                            <Image Source="../../Assets/AppAssets/RNCL_3.png" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+                            <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">Round Minecraft Launcher 3</Label>
+                        </DockPanel>
+                    </HyperlinkButton>
+                    <HyperlinkButton NavigateUri="https://github.com/Round-Studio/OverrideLauncher.Core">
+                        <DockPanel Margin="5">
+                            <Image Source="../../Assets/AppAssets/EC.png" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+                            <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">Override Launcher</Label>
+                        </DockPanel>
+                    </HyperlinkButton>
+                    <HyperlinkButton NavigateUri="https://github.com/Round-Studio/Round.NET.AvaloniaApp.MQTTMangeView">
+                        <DockPanel Margin="5">
+                            <Image Source="../../Assets/AppAssets/RMV.png" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+                            <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">Round MQTT Mange View</Label>
+                        </DockPanel>
+                    </HyperlinkButton>
+                    <HyperlinkButton NavigateUri="https://github.com/Round-Studio/Round.NET.AvaloniaApp.EncodeCalculator">
+                        <DockPanel Margin="5">
+                            <Image Source="../../Assets/AppAssets/REC.png" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+                            <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">Round Encode Calculator</Label>
+                        </DockPanel>
+                    </HyperlinkButton>
+                    <HyperlinkButton NavigateUri="https://github.com/Round-Studio/Round.NET.SmartTerminals">
+                        <DockPanel Margin="5">
+                            <Image Source="../../Assets/AppAssets/docusaurus.png" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+                            <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">Round Smart Terminals</Label>
+                        </DockPanel>
+                    </HyperlinkButton>
+                    <HyperlinkButton NavigateUri="https://github.com/Round-Studio/Round.WPF.WinDesign">
+                        <DockPanel Margin="5">
+                            <Image Source="../../Assets/AppAssets/Win32ForC.png.png" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+                            <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">Win-Design 2</Label>
+                        </DockPanel>
+                    </HyperlinkButton>
+                </StackPanel>
+            </ScrollViewer>
+            <TextBlock Margin="10" FontSize="20">过时的产品</TextBlock>
+            <ScrollViewer Margin="5">
+                <StackPanel>
+                    <HyperlinkButton NavigateUri="https://github.com/Round-Studio/Round.NET.AvaloniaApp.MinecraftLauncher">
+                        <DockPanel Margin="5">
+                            <Image Source="../../Assets/AppAssets/RMCL_Icon_New.png" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+                            <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">Round Minecraft Launcher</Label>
+                        </DockPanel>
+                    </HyperlinkButton>
+                    <HyperlinkButton NavigateUri="https://github.com/Round-Studio/OverrideLauncher.Core">
+                        <DockPanel Margin="5">
+                            <Image Source="../../Assets/AppAssets/Win32ForC.png.png" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+                            <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">Win-Design</Label>
+                        </DockPanel>
+                    </HyperlinkButton>
+                    <HyperlinkButton NavigateUri="https://github.com/Round-Studio/Round.NET.AvaloniaApp.MQTTMangeView">
+                        <DockPanel Margin="5">
+                            <Image Source="../../Assets/AppAssets/WM.png" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+                            <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">窗口修改器</Label>
+                        </DockPanel>
+                    </HyperlinkButton>
+                </StackPanel>
+            </ScrollViewer>
+        </StackPanel>
+    </ScrollViewer>
 </UserControl>
