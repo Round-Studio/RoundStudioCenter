@@ -23,13 +23,13 @@
                                 <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">Minecraft一角钱</Label>
                             </DockPanel>
                         </HyperlinkButton>
-                        <HyperlinkButton NavigateUri="https://github.com/MikuniDOMI">
+                        <HyperlinkButton NavigateUri="https://github.com/0x44614D696E67">
                             <DockPanel Margin="5">
                                 <Image Source="../../Assets/PeopleAssets/DrMing.jpg" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
                                 <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">DrMing</Label>
                             </DockPanel>
                         </HyperlinkButton>
-                        <HyperlinkButton NavigateUri="https://github.com/0x44614D696E67">
+                        <HyperlinkButton NavigateUri="https://github.com/MikuniDOMI">
                             <DockPanel Margin="5">
                                 <Image Source="../../Assets/PeopleAssets/DOMI.jpg" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
                                 <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">YoumiHa</Label>
@@ -114,7 +114,7 @@
                             <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">Win-Design</Label>
                         </DockPanel>
                     </HyperlinkButton>
-                    <HyperlinkButton NavigateUri="https://github.com/Round-Studio/Round.NET.AvaloniaApp.MQTTMangeView">
+                    <HyperlinkButton NavigateUri="https://qm.qq.com/q/1kGV8GzFG">
                         <DockPanel Margin="5">
                             <Image Source="../../Assets/AppAssets/WM.png" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
                             <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">窗口修改器</Label>
