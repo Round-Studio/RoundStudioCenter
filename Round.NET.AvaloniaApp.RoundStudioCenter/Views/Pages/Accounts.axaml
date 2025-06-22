@@ -5,7 +5,7 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="Round.NET.AvaloniaApp.RoundStudioCenter.Views.Pages.Accounts">
     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Label HorizontalAlignment="Center">还未登录哦</Label>
-        <Button IsEnabled="False" HorizontalAlignment="Center">登录</Button>
+        <Label HorizontalAlignment="Center" Margin="5">还未登录哦</Label>
+        <Button IsEnabled="False" HorizontalAlignment="Center" Margin="5">登录</Button>
     </StackPanel>
 </UserControl>
