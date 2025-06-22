@@ -2,9 +2,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:fluentIcons="clr-namespace:FluentAvalonia.FluentIcons;assembly=FluentAvalonia.FluentIcons"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="Round.NET.AvaloniaApp.RoundStudioCenter.Views.Pages.Accounts">
     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <fluentIcons:FluentIcon Icon="PersonProhibited20Regular" Height="30" Width="30" HorizontalAlignment="Center"/>
         <Label HorizontalAlignment="Center" Margin="5">还未登录哦</Label>
         <Button IsEnabled="False" HorizontalAlignment="Center" Margin="5">登录</Button>
     </StackPanel>
