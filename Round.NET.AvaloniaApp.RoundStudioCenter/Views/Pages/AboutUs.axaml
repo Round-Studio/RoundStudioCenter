@@ -63,7 +63,7 @@
                 <StackPanel>
                     <HyperlinkButton NavigateUri="https://github.com/Round-Studio/Round.NET.AvaloniaApp.MinecraftLauncher">
                         <DockPanel Margin="5">
-                            <Image Source="../../Assets/AppAssets/RNCL_3.png" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+                            <Image Source="../../Assets/AppAssets/RMCL_Icon_New.png" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
                             <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">Round Minecraft Launcher 3</Label>
                         </DockPanel>
                     </HyperlinkButton>
@@ -71,12 +71,6 @@
                         <DockPanel Margin="5">
                             <Image Source="../../Assets/AppAssets/EC.png" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
                             <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">Override Launcher</Label>
-                        </DockPanel>
-                    </HyperlinkButton>
-                    <HyperlinkButton NavigateUri="https://github.com/Round-Studio/Round.NET.AvaloniaApp.MQTTMangeView">
-                        <DockPanel Margin="5">
-                            <Image Source="../../Assets/AppAssets/RMV.png" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
-                            <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">Round MQTT Mange View</Label>
                         </DockPanel>
                     </HyperlinkButton>
                     <HyperlinkButton NavigateUri="https://github.com/Round-Studio/Round.NET.AvaloniaApp.EncodeCalculator">
@@ -102,13 +96,7 @@
             <TextBlock Margin="10" FontSize="20">过时的产品</TextBlock>
             <ScrollViewer Margin="5">
                 <StackPanel>
-                    <HyperlinkButton NavigateUri="https://github.com/Round-Studio/Round.NET.AvaloniaApp.MinecraftLauncher">
-                        <DockPanel Margin="5">
-                            <Image Source="../../Assets/AppAssets/RMCL_Icon_New.png" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
-                            <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">Round Minecraft Launcher</Label>
-                        </DockPanel>
-                    </HyperlinkButton>
-                    <HyperlinkButton NavigateUri="https://github.com/Round-Studio/OverrideLauncher.Core">
+                    <HyperlinkButton NavigateUri="https://github.com/MinecraftYJQ/Win-Design">
                         <DockPanel Margin="5">
                             <Image Source="../../Assets/AppAssets/Win32ForC.png.png" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
                             <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">Win-Design</Label>
