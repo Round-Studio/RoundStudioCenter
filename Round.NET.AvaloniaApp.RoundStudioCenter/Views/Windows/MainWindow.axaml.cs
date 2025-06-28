@@ -95,8 +95,8 @@ public partial class MainWindow : Window
             case "Apps":
                 MainFrame.NavigateTo(new Apps());
                 break;
-            case "Plugins":
-                MainFrame.NavigateTo(new Plugins());
+            case "Resources":
+                MainFrame.NavigateTo(new Resources());
                 break;
             case "Library":
                 MainFrame.NavigateTo(new Library());

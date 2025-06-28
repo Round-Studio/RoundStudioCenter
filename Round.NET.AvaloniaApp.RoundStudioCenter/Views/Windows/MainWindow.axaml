@@ -100,7 +100,7 @@
                         <fluentIcons:FluentIconSource Icon="Apps20Regular"/>
                     </ui:NavigationViewItem.IconSource>
                 </ui:NavigationViewItem>
-                <ui:NavigationViewItem Content="插件" Tag="Plugins">
+                <ui:NavigationViewItem Content="资源与插件" Tag="Resources">
                     <ui:NavigationViewItem.IconSource>
                         <fluentIcons:FluentIconSource Icon="PuzzlePiece20Regular"/>
                     </ui:NavigationViewItem.IconSource>

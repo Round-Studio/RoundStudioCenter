@@ -4,9 +4,9 @@ using Avalonia.Markup.Xaml;
 
 namespace Round.NET.AvaloniaApp.RoundStudioCenter.Views.Pages;
 
-public partial class Plugins : UserControl
+public partial class Resources : UserControl
 {
-    public Plugins()
+    public Resources()
     {
         InitializeComponent();
     }
