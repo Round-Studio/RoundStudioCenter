@@ -17,6 +17,11 @@ public partial class MainWindow : Window
         InitializeComponent();
     }
 
+    public void Navigate(UserControl page)
+    {
+        MainFrame.NavigateTo(page);
+    }
+    
     private void CloseButton_Click(object? sender, RoutedEventArgs e)
     {
         this.Close();
@@ -81,7 +86,7 @@ public partial class MainWindow : Window
 
     private void Button_OnClick(object? sender, RoutedEventArgs e)
     {
-        
+        MainFrame.NavigateTo(new MainView());
     }
 
     private void NavigationView_OnSelectionChanged(object? sender, NavigationViewSelectionChangedEventArgs e)
@@ -90,33 +95,35 @@ public partial class MainWindow : Window
         switch (tag)
         {
             case "Home":
-                MainFrame.NavigateTo(new MainView());
+                Navigate(new MainView());
                 break;
             case "Apps":
-                MainFrame.NavigateTo(new Apps());
+                Navigate(new Apps());
                 break;
             case "Resources":
-                MainFrame.NavigateTo(new Resources());
+                Navigate(new Resources("Main"));
                 break;
             case "Library":
-                MainFrame.NavigateTo(new Library());
+                Navigate(new Library());
                 break;
             case "AboutUs":
-                MainFrame.NavigateTo(new AboutUs());
+                Navigate(new AboutUs());
                 break;
             case "Docs":
                 //MainFrame.NavigateTo(new Docs());
                 // 打开默认浏览器并导航到指定URL
                 Process.Start(new ProcessStartInfo("https://gh.roundstudio.top") { UseShellExecute = true });
+                MainFrame.Tag = "Home";
+                Navigate(new MainView());
                 break;
             case "Settings":
-                MainFrame.NavigateTo(new Settings());
+                Navigate(new Settings());
                 break;
             case "Accounts":
-                MainFrame.NavigateTo(new Accounts());
+                Navigate(new Accounts());
                 break;
             case "About":
-                MainFrame.NavigateTo(new About());
+                Navigate(new About());
                 break;
         }
     }

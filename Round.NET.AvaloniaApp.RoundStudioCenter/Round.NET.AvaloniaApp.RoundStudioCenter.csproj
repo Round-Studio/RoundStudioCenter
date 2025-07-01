@@ -22,6 +22,7 @@
         <PackageReference Include="CommunityToolkit.Mvvm"/>
         <PackageReference Include="FluentAvalonia.FluentIcons" />
         <PackageReference Include="FluentAvaloniaUI" />
+        <PackageReference Include="NETStandard.Library" />
         <PackageReference Include="WebView.Avalonia" />
     </ItemGroup>
 
@@ -34,5 +35,9 @@
         <DependentUpon>MainView.axaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Modules\Models\" />
     </ItemGroup>
 </Project>

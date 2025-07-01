@@ -1,17 +1,22 @@
 using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Interactivity;
 using Avalonia.Layout;
 using Avalonia.Media;
 using FluentAvalonia.UI.Controls;
 using Round.NET.AvaloniaApp.RoundStudioCenter.Views.Controls;
+using Round.NET.AvaloniaApp.RoundStudioCenter.Views.Windows;
 
 namespace Round.NET.AvaloniaApp.RoundStudioCenter.Views.Pages;
 
 public partial class MainView : UserControl
 {
+    private readonly MainWindow _mainWindow;
+
     public MainView()
     {
         InitializeComponent();
+        _mainWindow = new MainWindow();
         AddNewCard("推荐", new FlipView { Height = 350 }, "RecommendsCard");
     }
     public void AddNewCard(string Title, Control Content, string Tag)
@@ -41,4 +46,8 @@ public partial class MainView : UserControl
         MainScreen.Children.Add(border);
     }
 
+    private void Button_OnClick(object? sender, RoutedEventArgs e)
+    {
+        _mainWindow.Navigate(new Resources("RMCL"));
+    }
 }

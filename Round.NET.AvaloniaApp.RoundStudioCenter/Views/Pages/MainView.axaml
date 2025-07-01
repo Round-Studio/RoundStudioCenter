@@ -20,7 +20,7 @@
             </DockPanel>-->
             <TextBlock FontWeight="Bold" FontSize="24" Margin="0,0,0,4">分类</TextBlock>
             <StackPanel>
-                <Button Margin="10" HorizontalAlignment="Stretch">
+                <Button Margin="10" HorizontalAlignment="Stretch" Click="Button_OnClick">
                     <DockPanel Margin="5">
                         <Image Source="../../Assets/AppAssets/RMCL_Icon_New.png" Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
                         <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0">RMCL 资源</Label>

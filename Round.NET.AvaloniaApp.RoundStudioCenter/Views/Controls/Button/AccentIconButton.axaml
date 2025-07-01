@@ -1,0 +1,67 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:fluentIcons="clr-namespace:FluentAvalonia.FluentIcons;assembly=FluentAvalonia.FluentIcons"
+             xmlns:button="clr-namespace:Round.NET.AvaloniaApp.RoundStudioCenter.Views.Controls.Button"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Round.NET.AvaloniaApp.RoundStudioCenter.Views.Controls.Button.AccentIconButton">
+    <UserControl.Styles>
+        <Style Selector="button|AccentIconButton">
+            <Setter Property="Template">
+                <ControlTemplate>
+                    <Button Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" CornerRadius="{TemplateBinding CornerRadius}" Classes="accent">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.Styles>
+                                <Style Selector="ContentControl">
+                                    <Setter Property="Transitions">
+                                        <Transitions>
+                                            <ThicknessTransition Property="Margin" Duration="0:0:0.2" Easing="QuarticEaseInOut"></ThicknessTransition>
+                                            <DoubleTransition Property="Opacity" Duration="0:0:0.2" Easing="QuarticEaseInOut"></DoubleTransition>
+                                        </Transitions>
+                                    </Setter>
+                                </Style>
+                            </Grid.Styles>
+                            
+                            <!-- Icon (initially hidden) -->
+                            <ContentControl x:Name="PART_Icon"
+                                            Margin="-4,0,12,0"
+                                            Opacity="0"
+                                            VerticalAlignment="Center"
+                                            Width="16" Height="16">
+                                <fluentIcons:FluentIcon
+                                    Icon="{TemplateBinding Icon}"/>
+                            </ContentControl>
+                            
+                            <!-- Content (always visible) -->
+                            <ContentControl x:Name="PART_Content"
+                                           Grid.Column="1"
+                                           Content="{TemplateBinding Content}"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center"/>
+                        </Grid>
+                    </Button>
+                </ControlTemplate>
+            </Setter>
+        </Style>
+        
+        <Style Selector="button|AccentIconButton /template/ ContentControl#PART_Content">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="-12,0,12,0"/>
+        </Style>
+        
+        <Style Selector="button|AccentIconButton:pointerover /template/ ContentControl#PART_Content">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0"/>
+        </Style>
+        
+        <Style Selector="button|AccentIconButton:pointerover /template/ ContentControl#PART_Icon">
+            <Setter Property="Opacity" Value="1"/>
+            <Setter Property="Margin" Value="0,0,8,0"/>
+        </Style>
+    </UserControl.Styles>
+</UserControl>

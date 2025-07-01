@@ -1,0 +1,19 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:FluentAvalonia.UI.Controls;assembly=FluentAvalonia"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             HorizontalAlignment="Center"
+             VerticalAlignment="Center"
+             x:Class="Round.NET.AvaloniaApp.RoundStudioCenter.Views.Controls.View.Loading">
+    <Border>
+        <DockPanel>
+            <controls:ProgressRing Margin="10" Height="40" Width="40"/>
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock FontSize="18" Name="BigTitleBox" FontWeight="Bold" HorizontalAlignment="Left" Margin="5">稍安勿躁</TextBlock>
+                <TextBlock FontSize="14" Name="SmallTitleBox" HorizontalAlignment="Left" Margin="5">正在收集宇宙电波...</TextBlock>
+            </StackPanel>
+        </DockPanel>
+    </Border>
+</UserControl>
