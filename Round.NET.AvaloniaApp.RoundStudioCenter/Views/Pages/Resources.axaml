@@ -2,62 +2,55 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:controls="clr-namespace:Round.NET.AvaloniaApp.RoundStudioCenter.Views.Controls"
-             xmlns:fluentIcons="clr-namespace:FluentAvalonia;assembly=FluentAvalonia.FluentIcons"
-             xmlns:fluentIcons1="clr-namespace:FluentAvalonia.FluentIcons;assembly=FluentAvalonia.FluentIcons"
-             xmlns:button1="clr-namespace:Round.NET.AvaloniaApp.RoundStudioCenter.Views.Controls.Button"
-             xmlns:view="clr-namespace:Round.NET.AvaloniaApp.RoundStudioCenter.Views.Controls.View"
+             xmlns:fluentIcons="clr-namespace:FluentAvalonia.FluentIcons;assembly=FluentAvalonia.FluentIcons"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="Round.NET.AvaloniaApp.RoundStudioCenter.Views.Pages.Resources">
-    <Grid>
-        <TabControl>
-            <TabItem Header="插件">
-                <Grid>
-                    
-                </Grid>
-            </TabItem>
-            <TabItem Header="RMCL资源">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="auto"></RowDefinition>
-                        <RowDefinition Height="*"></RowDefinition>
-                    </Grid.RowDefinitions>
-                    <StackPanel HorizontalAlignment="Stretch" 
-                                VerticalAlignment="Top" Name="SearchConfigBox">
-                        <DockPanel HorizontalAlignment="Stretch" 
-                                   VerticalAlignment="Top" 
-                                   LastChildFill="True"
-                                   Margin="10">
-                            <button1:AccentIconButton DockPanel.Dock="Right" Icon="Glasses20Regular" Content="搜索" Name="SearchBtn" Click="SearchBtn_OnClick"/>
-            
-                            <TextBox DockPanel.Dock="Left"
-                                     Watermark="键入资源名以搜索..."
-                                     Name="SearchBox"
-                                     HorizontalAlignment="Stretch"
-                                     Margin="0,0,10,0"/> 
-                        </DockPanel>
-                        <DockPanel
-                            HorizontalAlignment="Stretch" 
-                            VerticalAlignment="Top" 
-                            LastChildFill="True">
-                            <ComboBox DockPanel.Dock="Right" Name="AssetsType"
-                                      Margin="10,0,0,0"
-                                      Width="200" SelectedIndex="0">
-                                <ComboBoxItem Tag="Skin">主题</ComboBoxItem>
-                                <ComboBoxItem Tag="Plugin">插件</ComboBoxItem>
-                                <ComboBoxItem Tag="Code">脚本</ComboBoxItem>
-                            </ComboBox>
-                        </DockPanel>
+    <TabControl Margin="5">
+        <TabItem Margin="5" Header="插件"></TabItem>
+        <TabItem Margin="5" Header="RMCL资源">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackPanel HorizontalAlignment="Stretch" 
+                            VerticalAlignment="Top" Name="SearchConfigBox">
+                    <DockPanel HorizontalAlignment="Stretch" 
+                               VerticalAlignment="Top" 
+                               LastChildFill="True"
+                               Margin="10">
+                        <Button Margin="0,0,10,0">
+                            <DockPanel>
+                                <fluentIcons:FluentIcon Width="15" Height="15" Icon="Search20Regular" />
+                                <Label>搜索</Label>
+                            </DockPanel>
+                        </Button>
+                        <TextBox DockPanel.Dock="Left"
+                                 Watermark="键入资源名以搜索..."
+                                 Name="SearchBox"
+                                 HorizontalAlignment="Stretch"
+                                 Height="15"
+                                 Margin="0,0,10,0"/> 
+                    </DockPanel>
+                    <DockPanel
+                        HorizontalAlignment="Stretch" 
+                        VerticalAlignment="Top" 
+                        LastChildFill="True">
+                        <ComboBox DockPanel.Dock="Right" Name="AssetsType"
+                                  Margin="10,0,0,0"
+                                  Width="200" SelectedIndex="0">
+                            <ComboBoxItem Tag="Skin">主题</ComboBoxItem>
+                            <ComboBoxItem Tag="Plugin">插件</ComboBoxItem>
+                            <ComboBoxItem Tag="Code">脚本</ComboBoxItem>
+                        </ComboBox>
+                    </DockPanel>
+                </StackPanel>
+                <ScrollViewer Grid.Row="1" Margin="0,10,0,0" Padding="10">
+                    <StackPanel Name="AssetsList">
+                        <!-- 项目将通过代码或绑定添加 -->
                     </StackPanel>
-                    <view:Loading Grid.Row="1" Name="LoadingBox" IsVisible="False" BigTitle="翻箱倒柜" SmallTitle="正在翻箱倒柜..."/>
-                    <view:NullBox Grid.Row="1" Name="NullBox" IsVisible="True" BigTitle="找不到" SmallTitle="无"></view:NullBox>
-                    <ScrollViewer Grid.Row="1" Margin="0,10,0,0" Padding="10">
-                        <StackPanel Name="AssetsList">
-                            <!-- 项目将通过代码或绑定添加 -->
-                        </StackPanel>
-                    </ScrollViewer>
-                </Grid>
-            </TabItem>
-        </TabControl>
-    </Grid>
+                </ScrollViewer>
+            </Grid>
+        </TabItem>
+    </TabControl>
 </UserControl>
