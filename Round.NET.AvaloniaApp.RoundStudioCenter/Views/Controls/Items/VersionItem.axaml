@@ -1,0 +1,17 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:fluentIcons="clr-namespace:FluentAvalonia.FluentIcons;assembly=FluentAvalonia.FluentIcons"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Round.NET.AvaloniaApp.RoundStudioCenter.Views.Controls.Items.VersionItem">
+    <DockPanel LastChildFill="True" Margin="5">
+        <Button HorizontalAlignment="Right" DockPanel.Dock="Right" VerticalAlignment="Center" Click="Button_OnClick">
+            <DockPanel>
+                <fluentIcons:FluentIcon Width="15" Height="15" Icon="ArrowDownload20Regular"/>
+                <Label>下载</Label>
+            </DockPanel>
+        </Button>
+        <TextBlock Name="TitleBox" Text="Version" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" DockPanel.Dock="Left" VerticalAlignment="Center"></TextBlock>
+    </DockPanel>
+</UserControl>

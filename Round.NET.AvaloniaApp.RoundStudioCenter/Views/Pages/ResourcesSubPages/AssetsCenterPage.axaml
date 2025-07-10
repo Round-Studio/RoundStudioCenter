@@ -1,0 +1,33 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:fluentIcons="clr-namespace:FluentAvalonia;assembly=FluentAvalonia.FluentIcons"
+             xmlns:fluentIcons1="clr-namespace:FluentAvalonia.FluentIcons;assembly=FluentAvalonia.FluentIcons"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Round.NET.AvaloniaApp.RoundStudioCenter.Views.Pages.ResourcesSubPages.AssetsCenterPage">
+    <Grid>
+        <Image Opacity="0.4" Stretch="UniformToFill" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Name="BackBox"></Image>
+        
+        <Border Opacity="0.3" Background="{DynamicResource BackgroundTransparencyOverride}" Width="300" CornerRadius="5" HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="10"/>
+        <Border Width="300" HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="10" Padding="20">
+            <StackPanel VerticalAlignment="Center">
+                <Border Width="100" Height="100" CornerRadius="6" Margin="8" Name="IconBox">
+                    <fluentIcons1:FluentIcon Icon="Grid20Regular" Margin="10"/>
+                </Border>
+                
+                <TextBlock TextWrapping="Wrap" Name="NameBox" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center">Name</TextBlock>
+                <WrapPanel Name="LabelsBox" HorizontalAlignment="Center" Margin="8">
+                    
+                </WrapPanel>
+                <TextBlock TextWrapping="Wrap" Name="ProfileBox" FontSize="13" FontWeight="Thin" HorizontalAlignment="Center">Profile</TextBlock>
+            </StackPanel>
+        </Border>
+        
+        <ScrollViewer Padding="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="310,0,10,10">
+            <StackPanel Name="ResultBox">
+                
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

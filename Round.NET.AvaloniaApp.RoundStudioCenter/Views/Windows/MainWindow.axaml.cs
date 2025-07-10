@@ -101,7 +101,7 @@ public partial class MainWindow : Window
                 Navigate(new Apps());
                 break;
             case "Resources":
-                Navigate(new Resources("Main"));
+                Navigate(new Resources());
                 break;
             case "Library":
                 Navigate(new Library());

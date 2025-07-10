@@ -38,6 +38,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Modules\Models\" />
+      <Folder Include="Modules\Entry\" />
     </ItemGroup>
 </Project>

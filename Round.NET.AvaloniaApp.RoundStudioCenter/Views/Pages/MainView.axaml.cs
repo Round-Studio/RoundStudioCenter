@@ -48,6 +48,6 @@ public partial class MainView : UserControl
 
     private void Button_OnClick(object? sender, RoutedEventArgs e)
     {
-        _mainWindow.Navigate(new Resources("RMCL"));
+        _mainWindow.Navigate(new Resources());
     }
 }
