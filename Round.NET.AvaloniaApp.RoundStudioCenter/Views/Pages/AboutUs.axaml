@@ -13,6 +13,8 @@
                 <HyperlinkButton DockPanel.Dock="Left" NavigateUri="https://round-studio.github.io/">官网</HyperlinkButton>
                 <HyperlinkButton DockPanel.Dock="Left" NavigateUri="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;k=w5s2W_wC-_smmW5LxilzMLHFkfTGSWe4&amp;authKey=FlE3UPHcmFqvT1xl%2FWvRUEtMHhyQ3NyglNprL35e%2BRznI9E%2FNOQCS%2B4oxzF%2BpckB&amp;noverify=0&amp;group_code=1022907106">联系我们</HyperlinkButton>
             </DockPanel>
+            <TextBlock Margin="10" FontSize="20">团队邮箱</TextBlock>
+            <Label Margin="10">issue@roundstudio.top</Label>
             <TextBlock Margin="10" FontSize="20">团队成员</TextBlock>
             <StackPanel Margin="5">
                 <DockPanel HorizontalAlignment="Stretch">
