@@ -1,2 +1,6 @@
 ﻿# Round Studio Center
-Round Studio中心
+ 
+> [!WARNING]
+> 此仓库已不再使用
+> 
+Round Studio 中心（旧版）
